@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/MemoryGame.unity
+    guid: fe18b8133e6c7744cb67e53bb5187a72
+  - enabled: 1
+    path: Assets/Scenes/PoolGame.unity
+    guid: 7c87aaca68587eb42a11d6a9d0e4d37f
   m_configObjects: {}
