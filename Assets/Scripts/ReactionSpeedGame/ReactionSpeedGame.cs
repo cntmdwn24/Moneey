@@ -1,15 +1,25 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
-public class ReactionTest : MonoBehaviour
+public class ReactionSpeedGame: MonoBehaviour
 {
+    public static ReactionSpeedGame Instance { get; private set; }
+
     public TextMeshProUGUI reactionTimeText;
     public TextMeshProUGUI finshreactionTimeText;
     private float startTime;      
     private bool isReactionStarted;
     public Image image;
     [SerializeField] private GameObject finsh;
+    public float reactionTime;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     void Start()
     {
@@ -40,7 +50,7 @@ public class ReactionTest : MonoBehaviour
         if (isReactionStarted && Input.GetMouseButtonDown(0))  
         {
             finsh.SetActive(true);
-            float reactionTime = (Time.realtimeSinceStartup - startTime) * 1000; 
+            reactionTime = (Time.realtimeSinceStartup - startTime) * 1000; 
             finshreactionTimeText.text = $"ReactionSpeed: {reactionTime:F2} ms"; 
             isReactionStarted = false; 
         }
