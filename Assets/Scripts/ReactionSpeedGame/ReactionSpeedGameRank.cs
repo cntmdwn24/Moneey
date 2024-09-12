@@ -3,10 +3,26 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class ReactionSpeedGameRank : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI text;
+    [SerializeField] private Button lobby;
+    [SerializeField] private Button reStart;
+
+    private void Awake()
+    {
+        lobby.onClick.AddListener(() =>
+        {
+            SceneManager.LoadScene("Main");
+        });
+        reStart.onClick.AddListener(() =>
+        {
+            SceneManager.LoadScene("ReactionSpeedGame");
+        });
+    }
 
     private void Update()
     {
@@ -20,7 +36,7 @@ public class ReactionSpeedGameRank : MonoBehaviour
         }
         else if (ReactionSpeedGame.Instance.reactionTime < 300)
         {
-            text.text = "Dingshin is a haman";
+            text.text = "Dingshin is a human";
         }
         else if (ReactionSpeedGame.Instance.reactionTime < 400)
         {

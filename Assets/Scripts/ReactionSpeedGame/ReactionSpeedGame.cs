@@ -1,6 +1,7 @@
 using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
@@ -14,11 +15,18 @@ public class ReactionSpeedGame: MonoBehaviour
     private bool isReactionStarted;
     public Image image;
     [SerializeField] private GameObject finsh;
+    [SerializeField] private GameObject outGameObject;
+    [SerializeField] private Button restart;
     public float reactionTime;
 
     private void Awake()
     {
         Instance = this;
+        
+        restart.onClick.AddListener(() =>
+        {
+            SceneManager.LoadScene("ReactionSpeedGame");
+        });
     }
 
     void Start()
@@ -44,6 +52,8 @@ public class ReactionSpeedGame: MonoBehaviour
         if (image.color == Color.red && Input.GetMouseButtonDown(0))
         {
             reactionTimeText.text = "not now!";
+            outGameObject.SetActive(true);
+            
         }
         
         

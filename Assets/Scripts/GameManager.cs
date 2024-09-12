@@ -1,17 +1,28 @@
+using System;
 using UnityEngine;
-using UnityEngine.SceneManagement; // 씬 관리를 위해 추가
+using UnityEngine.SceneManagement;
+using UnityEngine.UI; // 씬 관리를 위해 추가
 
 public class GameManager : MonoBehaviour
 {
-    public void sex()
-    {
-        Debug.Log("sex");
-        SceneManager.LoadScene("MemoryGame"); // 여기에 원하는 씬 이름을 입력하세요
-    }
+    [SerializeField] private Button poolButton;
+    [SerializeField] private Button memoryButton;
+    [SerializeField] private Button reactionSpeedButton;
 
-    public void sx()
+    private void Awake()
     {
-        Debug.Log("sex");
-        SceneManager.LoadScene("Pool"); // 여기에 원하는 씬 이름을 입력하세요
+        poolButton.onClick.AddListener(() =>
+        {
+            SceneManager.LoadScene("PoolGame"); // 여기에 원하는 씬 이름을 입력하세요
+        });
+        memoryButton.onClick.AddListener(() =>
+        {
+            SceneManager.LoadScene("MemoryGame"); // 여기에 원하는 씬 이름을 입력하세요
+        });
+        reactionSpeedButton.onClick.AddListener(() =>
+        {
+            SceneManager.LoadScene("ReactionSpeedGame");
+        });
+        
     }
 }
