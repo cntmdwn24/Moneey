@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0a672406-4221-4d53-8ed9-84951033d9ba" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Moneey/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Moneey/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ReactionSpeedGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ReactionSpeedGame.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ReactionSpeedGame/ReactionSpeedGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ReactionSpeedGame/ReactionSpeedGame.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ReactionSpeedGame/ReactionSpeedGameRank.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ReactionSpeedGame/ReactionSpeedGameRank.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +107,7 @@
       <workItem from="1726039021205" duration="11262000" />
       <workItem from="1726056486872" duration="16000" />
       <workItem from="1726056513720" duration="465000" />
-      <workItem from="1726102910097" duration="1139000" />
+      <workItem from="1726102910097" duration="12905000" />
     </task>
     <servers />
   </component>
