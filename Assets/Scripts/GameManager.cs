@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Button poolButton;
     [SerializeField] private Button memoryButton;
     [SerializeField] private Button reactionSpeedButton;
+    [SerializeField] private Button HiddenPicturesButton;
 
     private void Awake()
     {
@@ -22,6 +23,10 @@ public class GameManager : MonoBehaviour
         reactionSpeedButton.onClick.AddListener(() =>
         {
             SceneManager.LoadScene("ReactionSpeedGame");
+        });
+        HiddenPicturesButton.onClick.AddListener(() =>
+        {
+            SceneManager.LoadScene("Hidden Pictures");
         });
         
     }

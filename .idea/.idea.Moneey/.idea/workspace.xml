@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0a672406-4221-4d53-8ed9-84951033d9ba" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Moneey/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Moneey/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Hidden Pictures.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Hidden Pictures.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HiddenPIctureGame/HiddenPictureGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HiddenPIctureGame/HiddenPictureGame.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +43,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;추승주-&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;김도영&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -108,6 +110,8 @@
       <workItem from="1726056486872" duration="16000" />
       <workItem from="1726056513720" duration="465000" />
       <workItem from="1726102910097" duration="12905000" />
+      <workItem from="1726729560410" duration="42000" />
+      <workItem from="1726729608507" duration="3957000" />
     </task>
     <servers />
   </component>
