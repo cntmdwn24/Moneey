@@ -5,16 +5,16 @@ using UnityEngine.UI; // 씬 관리를 위해 추가
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] private Button poolButton;
+    [SerializeField] private Button WatermelonGOButton;
     [SerializeField] private Button memoryButton;
     [SerializeField] private Button reactionSpeedButton;
     [SerializeField] private Button HiddenPicturesButton;
 
     private void Awake()
     {
-        poolButton.onClick.AddListener(() =>
+        WatermelonGOButton.onClick.AddListener(() =>
         {
-            SceneManager.LoadScene("PoolGame"); // 여기에 원하는 씬 이름을 입력하세요
+            SceneManager.LoadScene("WatermelonGO!Game"); // 여기에 원하는 씬 이름을 입력하세요
         });
         memoryButton.onClick.AddListener(() =>
         {

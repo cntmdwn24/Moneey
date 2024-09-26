@@ -3,7 +3,18 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - WatermelonGO!Game circle 1
+  - WatermelonGO!Game circle 2
+  - WatermelonGO!Game circle 3
+  - WatermelonGO!Game circle 4
+  - WatermelonGO!Game circle 5
+  - WatermelonGO!Game circle 6
+  - WatermelonGO!Game circle 7
+  - WatermelonGO!Game circle 8
+  - WatermelonGO!Game circle 9
+  - WatermelonGO!Game circle 10
+  - WatermelonGO!Game out Line
   layers:
   - Default
   - TransparentFX

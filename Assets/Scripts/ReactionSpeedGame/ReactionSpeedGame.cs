@@ -17,6 +17,7 @@ public class ReactionSpeedGame: MonoBehaviour
     [SerializeField] private GameObject finsh;
     [SerializeField] private GameObject outGameObject;
     [SerializeField] private Button restart;
+    [SerializeField] private Button click;
     public float reactionTime;
 
     private void Awake()
@@ -26,6 +27,22 @@ public class ReactionSpeedGame: MonoBehaviour
         restart.onClick.AddListener(() =>
         {
             SceneManager.LoadScene("ReactionSpeedGame");
+        });
+        click.onClick.AddListener(() =>
+        {
+            if (isReactionStarted)
+            {
+                finsh.SetActive(true);
+                reactionTime = (Time.realtimeSinceStartup - startTime) * 1000; 
+                finshreactionTimeText.text = $"ReactionSpeed: {reactionTime:F2} ms"; 
+                isReactionStarted = false; 
+            }
+            if (image.color == Color.red)
+            {
+                reactionTimeText.text = "not now!";
+                outGameObject.SetActive(true);
+            
+            }
         });
     }
 
