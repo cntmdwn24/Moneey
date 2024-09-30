@@ -15,6 +15,7 @@ TagManager:
   - WatermelonGO!Game circle 9
   - WatermelonGO!Game circle 10
   - WatermelonGO!Game out Line
+  - WatermelonGO!Game circle 11
   layers:
   - Default
   - TransparentFX

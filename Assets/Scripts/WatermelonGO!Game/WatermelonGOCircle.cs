@@ -6,12 +6,41 @@ using UnityEngine;
 
 public class WatermelonGOCircle : MonoBehaviour
 {
+    public static WatermelonGOCircle Instane { get; private set; }
     public bool isMarge;
     private Collision2D deother;
     private int index = 0;
-    
-    
-    
+    public bool dss;
+
+    private void Awake()
+    {
+        Instane = this;
+    }
+
+    private void Update()
+    {
+        if (index > WatermelonGOObjectManager.Instance.maxindex)
+        {
+            WatermelonGOObjectManager.Instance.maxindex = index;
+        }
+        
+        if (WatermelonGOObjectManager.Instance.drop)
+        {
+            dss = true;
+        }
+
+        if (gameObject.tag == "WatermelonGO!Game circle 11")
+        {
+            StartCoroutine(dd());
+            
+        }
+    }
+    IEnumerator Timer()
+    {
+        yield return new WaitForSeconds(.5f);
+        dss = true;
+    }
+
     private void OnCollisionStay2D(Collision2D other)
     {
         if (other.gameObject.tag == "WatermelonGO!Game circle 1")
@@ -31,7 +60,10 @@ public class WatermelonGOCircle : MonoBehaviour
                     if (meY < otherMeY || (meY == otherMeY && meX == otherMeX))
                     {
                         collision.Hide(transform.position);
+                        //WatermelonGOClearUI.Instance.Show();
+                        //Time.timeScale = 0;
                         Destroy(gameObject);
+                       
                     }
                 }
             }
@@ -226,6 +258,14 @@ public class WatermelonGOCircle : MonoBehaviour
             }
         }
     }
+    
+
+    IEnumerator dd()
+    {
+        yield return new WaitForSeconds(2f);
+        WatermelonGOClearUI.Instance.Show();
+        Time.timeScale = 0;
+    }
 
     private void Hide(Vector3 targetPos)
     {
@@ -248,6 +288,7 @@ public class WatermelonGOCircle : MonoBehaviour
         isMarge = false;
         Destroy(gameObject);
         GameObject gameObject1 = Instantiate(WatermelonGOObjectManager.Instance.prefabObject[index], transform.position, Quaternion.identity);
+        gameObject1.GetComponent<WatermelonGOCircle>().dss = true;
         gameObject1.GetComponentInChildren<CircleCollider2D>().enabled=true;
         gameObject1.GetComponent<Rigidbody2D>().simulated = true;
     }

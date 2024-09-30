@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 849647089642009176}
   m_Layer: 0
   m_Name: Circle 11
-  m_TagString: WatermelonGO!Game circle 7
+  m_TagString: WatermelonGO!Game circle 11
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -162,3 +162,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isMarge: 0
+  dss: 0
